@@ -16,3 +16,74 @@ body {
   margin: 0;
   padding: 0;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+ul li {
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  /* background: var(--secondaryColor); */
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  transform-origin: bottom center;
+  animation: animate 7s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+ul li:nth-child(1) {
+  background: red;
+  animation-delay: 0s;
+}
+
+ul li:nth-child(2) {
+  background: orange;
+  animation-delay: 1s
+}
+
+ul li:nth-child(3) {
+  background: yellow;
+  animation-delay: 2s
+}
+
+ul li:nth-child(4) {
+  background: green;
+  animation-delay: 3s
+}
+
+ul li:nth-child(5) {
+  background: blue;
+  animation-delay: 4s
+}
+
+ul li:nth-child(6) {
+  background: indigo;
+  animation-delay: 5s
+}
+
+ul li:nth-child(7) {
+  background: violet;
+  animation-delay: 6s
+}
+
+ul li:nth-child(8) {
+  background: transparent;
+  animation-delay: 7s
+}
